@@ -1,0 +1,31 @@
+
+#!/bin/bash
+#Question 1
+
+read num
+
+if (( $num == 20 ))
+
+
+then
+        printf "%d is equal to 20 \n" "$num"
+        
+        
+else
+        printf "%d is not equal to 20 \n" "$num"
+fi
+
+
+
+#!/bin/bash
+#Question 2
+
+read directory
+
+if [ -d $directory ];
+then
+    printf "%s exists\n" $directory 
+    printf "Current Directory is %s\n" $PWD
+else
+    echo "The Directory is not present"
+fi
