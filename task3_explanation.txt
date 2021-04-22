@@ -1,0 +1,10 @@
+RC scriptdə task 1 və 2nin kodlarının olub olmadığını 
+yoxlayır, yoxdusa exit olur. Casedə ilk arqument $1 olur,
+əgər start olarsa "Script Started...." yazılır, sonra scripti 
+start etmək üçün "usr/local/sbin/task12.sh" yazırıq. 
+Blockdan öncə arakəsmə üçün echo əlavə etdim, sonra da 
+script start olunan zaman resursu bloklaması üçün 
+"touch..." əlavə etdim. Stop olarsa yenə echo əlavə etdim, 
+kill etməsi üçün 9-cu sistemin siqnalını çağırırıq. 
+Sonra da remove fayl edirik "rm -f /var/lock/subsy/task12". 
+Reload və restart olarsa isə stop'u təkrarlayırıq. 
